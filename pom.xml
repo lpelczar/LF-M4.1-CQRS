@@ -25,13 +25,14 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <groupId>org.togglz</groupId>
+            <artifactId>togglz-spring-boot-starter</artifactId>
+            <version>3.1.0</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
         <dependency>
@@ -60,6 +61,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.togglz</groupId>
+            <artifactId>togglz-junit5</artifactId>
+            <version>2.8.0</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

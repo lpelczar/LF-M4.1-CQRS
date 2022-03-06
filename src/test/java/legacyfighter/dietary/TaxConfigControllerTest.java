@@ -1,8 +1,10 @@
 package legacyfighter.dietary;
 
+import legacyfighter.dietary.config.FeatureFlags;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.togglz.junit5.AllEnabled;
 
 import java.util.List;
 import java.util.Map;
@@ -22,6 +24,7 @@ class TaxConfigControllerTest {
     TaxConfigController taxConfigController;
 
     @Test
+    @AllEnabled(FeatureFlags.class)
     void shouldReturnCorrectMapOfConfigs() {
         //given
         newConfigWithRuleAndMaxRules(countryCode1, 2, TaxRule.linearRule(1, 6, "tax1"));

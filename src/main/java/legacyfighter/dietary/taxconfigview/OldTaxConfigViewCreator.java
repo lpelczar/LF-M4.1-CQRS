@@ -10,11 +10,11 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
-class EntityBasedTaxConfigViewCreator {
+class OldTaxConfigViewCreator {
 
     private final TaxRuleService taxRuleService;
 
-    EntityBasedTaxConfigViewCreator(TaxRuleService taxRuleService) {
+    OldTaxConfigViewCreator(TaxRuleService taxRuleService) {
         this.taxRuleService = taxRuleService;
     }
 
